@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+.header {
+  /* display: flex;
+  flex: 1; */
+  background-color: #f5f5f5;
+  padding: 20px;
+  border: 1px solid #f5f5f5;
+  margin-bottom: 4px;
+  font-size: 48px;
+  font-weight: bold;
+  /* position: fixed;
+  left: 50%;  */
+  text-align: center;
+  /* transform: translate(-50%, 0); */
+}
+
+.children {
+  background-color: #f5f5f5;
+  margin-top: 1px;
+}
+
+.mainWraper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 4px,
+}
+
+.clothbutton {
+  padding: 40px;
+  flex: 1;
+  background-color: #2bd9af;
+  margin: 5px;
+  color: #FFFF;
+  font-size: 28px;
+  font-weight: bold;
+  height: 28vh;
+  border-radius: 5px;
+}
+
+.clothbutton2 {
+  padding: 20px;
+  flex: 1;
+  background-color: #ff5d84;
+  margin: 5px;
+  color: #FFFF;
+  font-size: 28px;
+  font-weight: bold;
+  height: 28vh;
+  border-radius: 5px;
+}
+
+.bottomWrap {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cardTitle {
+  font-size: 13;
+  font-weight: bold;
+  padding: 2;
+  height: 85px;
+  text-align: center;
+}
+
+.cardBottomText {
+  text-overflow: ellipsis;
+  text-align: center;
+  height: 94px;
+  overflow: hidden;
+  white-space: wrap;
+  width: 170px;
+}
+
+.card {
+  box-Shadow: 4px 4px 4px #e4dddd;
+  border: 1px solid rgba(225, 225, 222, 0.77);
+
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.cardImg {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: 60px;
+}
+
+.priceTag {
+  font-weight: bold;
+  border-radius: 14px;
+  text-align: center;
+  color: #166de7;
+  padding: 3px;
+}
+
+.title {
+  font-size: 28px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
